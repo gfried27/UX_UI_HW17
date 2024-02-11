@@ -1,60 +1,216 @@
 body {
     background-color: #F8F8F8;
+    display: flex;
+    width: 1440px;
+    padding: 0px 0px 202px 0px;
+    border: none;
+    margin: none;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 header {
-    border: 1px red;
+    display: flex;
+    width: 1440px;
+    padding: 40px 72px 0px 72px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#logo-nav {
+    display: flex;
+    width: 1440px;
+    align-items: flex-end;
+    gap: 227px;
 }
 
 .g-logo {
-    width: 148px;
-    padding: 4px 30px 4px 30px;
+    display: flex;
+    padding: 4px 30px;
+    align-items: flex-start;
+}
+
+.nav-frame {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .nav {
-    font-family: "futura-pt", sans-serif;
-    font-weight: 300;
+    display: flex;
+    width: 208px;
+    padding: 14px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-frame a {
+    font-family: "Futura PT";
+    font-size: 16px;
     font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
 }
 
 #hero {
-    outline: 1px, red;
+    height: 690px;
 }
 
 .hero-img {
-
+    display: flex;
+    height: 690px;
+    background: linear-gradient(72deg, rgba(91, 97, 53, 0.35) 49.15%, rgba(91, 97, 53, 0.00) 94.33%), url("../images/unsplash_MMJx78V7xS8.jpg"), no-repeat;
+    border: none;
+    padding: none;
 }
 
 #profile {
+    display: flex;
+    width: 643px;
+    padding: 40px 36px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 398px;
+    top: 88px;
+    background: #153F3D;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15);
+}
 
+.profile-top {
+    display: flex;
+    width: 569px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px 35px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .profile-pic {
-
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: url("../images/profile_pic.png"), no-repeat;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.10);
 }
 
-.profile-h1 {
-    font-family: "adobe-garamond-pro", serif;
-    font-weight: 700;
+.profile-title {
+    width: 334px;
+    flex-shrink: 0;
+}
+
+.profile-title h1 {
+    color: #00AFAA;
+    font-family: "Adobe Garamond Pro";
+    font-size: 78px;
     font-style: normal;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -0.39px;
+    width: 334px;
+    height: 200px;
+    flex-shrink: 0;
 }
 
-.profile-h2 {
-
+.profile-title h2 {
+    color: #EFF0E7;
+    font-family: "Futura PT";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 66px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    width: 334px;
+    height: 200px;
+    flex-shrink: 0;
 }
 
-.profile-p {
-
+.profile-body {
+    width: 563px;
+    flex-shrink: 0;
 }
 
-#profile-buttons {
-
+.profile-body p {
+    color: #F8F8F8;
+    font-family: "Adobe Garamond Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    width: 563px;
+    flex-shrink: 0;
 }
 
-.profile-button {
-
+#social-button-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 190px;
 }
 
 .icon-linkedin {
+    width: 50px;
+}
 
+.profile-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-button {
+    border-radius: 12px;
+    border: 3px solid #EFF0E7;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#skills {
+    display: flex;
+    width: 1440px;
+    padding: 90px 72px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#ux-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#ux-skills-ia {
+    display: flex;
+    width: 425px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.skill-illustraton-ia {
+    width: 168px;
+    height: 168px;
+    border-radius: 168px;
+    border: 4px solid #5B6135;
+    background: url("../images/illustration_IA.png"), lightgray -49.203px 0px / 156.25% 100% no-repeat;
 }
